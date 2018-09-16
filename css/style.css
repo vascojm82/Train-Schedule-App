@@ -1,0 +1,26 @@
+.train-form, .trainTbl{
+    margin: auto;
+    float: left;
+    padding: 4rem;
+}
+
+.train-form{
+    width: 25% !important;
+}
+
+.trainTbl{
+    width: 70%;
+}
+
+.header{
+    text-align: center;
+}
+
+.trainTbl h1{
+    margin-bottom: 4rem;
+}
+
+.hide-row{
+  visibility: hidden;
+  position: absolute;
+}
