@@ -6,6 +6,26 @@ $( document ).ready(function() {
      trainTime = '',
      frequency = '';
 
+var backgroundMusicObject = soundManager.createSound({
+      url: "assets/KOFXII_Esaka.mp3",
+      autoLoad: true,
+      autoPlay: true,
+      loops: 100
+  });
+
+  backgroundMusicObject.stop();
+  backgroundMusicObject.setVolume(30);
+
+  $('#openingModal').modal('show');     //Display Opening Modal
+
+  $('.close-btn').click(function(){
+    backgroundMusicObject.play();
+  });
+
+  $('.close').click(function(){
+    backgroundMusicObject.play();
+  });
+
  // Initialize Firebase
  var config = {
     apiKey: "AIzaSyDS60z9Rui-EkBU3sM5wLU2iQn22r8DZO8",
